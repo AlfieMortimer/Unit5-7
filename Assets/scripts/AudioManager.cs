@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioManager instance;
+    public static AudioManager instanceAudio;
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource fireCrackle;
     [SerializeField] AudioSource SFXSource;
@@ -16,10 +16,10 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null)
+        if (instanceAudio == null)
         {
             // if instance is null, store a reference to this instance
-            instance = this;
+            instanceAudio = this;
             DontDestroyOnLoad(gameObject);
         }
         else

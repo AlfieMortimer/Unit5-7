@@ -6,7 +6,10 @@ using UnityEngine;
 public class camerastartmovement : MonoBehaviour
 {
     public LevelManager LevelManager;
+    public GameObject LMobj;
     public AudioManager audioManager;
+    public GameObject AMobj;
+
     public GameObject Target;
     public GameObject Door;
     public GameObject DoorTarget;
@@ -17,7 +20,10 @@ public class camerastartmovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        LMobj = GameObject.FindWithTag("LevelManager");
+        LevelManager = LMobj.GetComponent<LevelManager>();
+        LMobj = GameObject.FindWithTag("AudioManager");
+        audioManager = LMobj.GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
