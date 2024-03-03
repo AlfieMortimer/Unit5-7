@@ -14,21 +14,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip clickSFX2;
     public AudioClip FireLoop;
 
-    void Awake()
-    {
-        if (instanceAudio == null)
-        {
-            // if instance is null, store a reference to this instance
-            instanceAudio = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            // Another instance of this gameobject has been made so destroy it
-            // as we already have one
-            Destroy(gameObject);
-        }
-    }
 
     // Start is called before the first frame update
     private void Start()

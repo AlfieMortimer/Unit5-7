@@ -22787,7 +22787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c452ba096d0d944af6327f25b36410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
+  transition: {fileID: 4186547280306904754}
   Graphics: {fileID: 1524073785}
   Difficulty: {fileID: 1916098216}
   MasterMixer: {fileID: 24100000, guid: 669abbdecc997ee4c84d1d047bb7cf69, type: 2}
@@ -60078,7 +60078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 454.5501, y: -196.81464}
+  m_AnchoredPosition: {x: 419, y: -196.81464}
   m_SizeDelta: {x: 131.47937, y: 49.56671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338892092
@@ -60240,7 +60240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 412, y: -176}
+  m_AnchoredPosition: {x: 387, y: -175}
   m_SizeDelta: {x: 131.47919, y: 49.56671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354427007
@@ -65981,10 +65981,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 698348267}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+      - m_Target: {fileID: 1884057710}
+        m_TargetAssemblyTypeName: SceneValues, Assembly-CSharp
         m_MethodName: SetValueSFX
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -66235,8 +66235,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 698348267}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+      - m_Target: {fileID: 1884057710}
+        m_TargetAssemblyTypeName: SceneValues, Assembly-CSharp
         m_MethodName: Graphicssave
         m_Mode: 1
         m_Arguments:
@@ -82495,12 +82495,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d207d9b04469b47a8898403d71625d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Graphics: {fileID: 0}
-  Difficulty: {fileID: 0}
-  MasterMixer: {fileID: 0}
-  MasterSlider: {fileID: 0}
-  MusicSlider: {fileID: 0}
-  SFXSlider: {fileID: 0}
+  transition: {fileID: 0}
+  Graphics: {fileID: 1524073785}
+  Difficulty: {fileID: 1916098216}
+  MasterMixer: {fileID: 24100000, guid: 669abbdecc997ee4c84d1d047bb7cf69, type: 2}
+  MasterSlider: {fileID: 1950224792}
+  MusicSlider: {fileID: 2002133621}
+  SFXSlider: {fileID: 1498203503}
   Master: 0
   Music: 0
   SFX: 0
@@ -82859,8 +82860,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 698348267}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+      - m_Target: {fileID: 1884057710}
+        m_TargetAssemblyTypeName: SceneValues, Assembly-CSharp
         m_MethodName: DifficultySave
         m_Mode: 1
         m_Arguments:
@@ -83090,10 +83091,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 698348267}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+      - m_Target: {fileID: 1884057710}
+        m_TargetAssemblyTypeName: SceneValues, Assembly-CSharp
         m_MethodName: SetValueMaster
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -83498,10 +83499,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 698348267}
-        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+      - m_Target: {fileID: 1884057710}
+        m_TargetAssemblyTypeName: SceneValues, Assembly-CSharp
         m_MethodName: SetValueMusic
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -89477,6 +89478,11 @@ PrefabInstance:
 --- !u!224 &4186547280306904753 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6840264493225534115, guid: e8ba7c34a068aaf478d73a597c03439d, type: 3}
+  m_PrefabInstance: {fileID: 4186547280306904752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4186547280306904754 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2179458392480692177, guid: e8ba7c34a068aaf478d73a597c03439d, type: 3}
   m_PrefabInstance: {fileID: 4186547280306904752}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
