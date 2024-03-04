@@ -33,7 +33,8 @@ public class SceneValues : MonoBehaviour
     public float Music;
     public float SFX;
 
-   
+    //mute toggle
+    bool ismuted;
 
     void Start()
     {
@@ -69,11 +70,19 @@ public class SceneValues : MonoBehaviour
         PlayerPrefs.SetFloat("Master", Master);
         MasterMixer.SetFloat("Master", Master);
     }
+    public void loadMusic()
+    {
+        Music = PlayerPrefs.GetFloat("Music");
+
+    }
     public void SetValueMusic()
     {
-        Music = MusicSlider.value ;
-        PlayerPrefs.SetFloat("Music", Music);
-        MasterMixer.SetFloat("Music", Music);
+        if (ismuted == false)
+        {
+            Music = MusicSlider.value ;
+            PlayerPrefs.SetFloat("Music", Music);
+            MasterMixer.SetFloat("Music", Music);
+        }
     }
     public void SetValueSFX()
     {
@@ -117,6 +126,20 @@ public class SceneValues : MonoBehaviour
         StartCoroutine(Return());
     }
 
+    public void Mutetoggle(bool muted)
+    {
+        if (muted)
+        {
+            MasterMixer.SetFloat("Music", -80);
+            ismuted = true;
+        }
+        else
+        {
+            loadMusic();
+            ismuted = false;
+            SetValueMusic();
+        }
+    }
     IEnumerator Return()
     {
         transition.SetTrigger("Transition");
